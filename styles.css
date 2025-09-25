@@ -1,0 +1,32 @@
+:root {
+    --backgroud-color: #00090e;
+    --text-color: #E1E1E1;
+    --primary-color: #00bcd4;
+    --secondary-color: #ff4081;
+    --tag-color: #171d1f;
+    --font-family: "Prompt", sans-serif;
+    --itens-background-color: #171d1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--backgroud-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    gap: 1.69em;
+    padding: 3.5em;
+}
+
+.lista-links {
+    text-decoration: none;
+    color: inherit;
+}
