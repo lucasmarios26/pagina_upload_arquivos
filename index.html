@@ -23,7 +23,9 @@
                 </li>
                 <li>
                     <img src="./img/feed.svg" alt="Icone Feed">
-                    <a href="#">Feed</a>
+                    <a href="#">
+                        Feed
+                    </a>
                 </li>
                 <li>
                     <img src="./img/account_circle.svg" alt="Icone Perfil">
@@ -54,9 +56,27 @@
         <div class="container-descricao">
             <h2>Novo projeto</h2>
             <form>
-                <div>
+             <div>
                     <label for="nome">Nome do projeto</label>
-                    <input type="text" id="nome" name="nome" placeholder="Nome do projeto">
+                    <input type="text" id="nome" name="nome" />
+                </div>
+                <div>
+                    <label for="descricao">Descricao</label>
+                    <textarea id="descricao" name="descricao"></textarea>
+                </div>
+                <div>
+                    <label for="categoria">Tags</label>
+                    <input type="text" id="categoria" name="categoria" />
+                </div>
+                <ul class="lista-tags">
+                    <li>
+                        <p>Front-end</p>
+                        <img src="./img/close-black.svg">
+                    </li>
+                </ul>
+                <div class="container-botoes">
+                    <button class="botao-descartar">Descartar</button>
+                    <button class="botao-publicar">Publicar</button>
                 </div>
             </form>
         </div>
