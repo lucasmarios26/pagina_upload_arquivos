@@ -1,8 +1,8 @@
 :root {
     --backgroud-color: #00090e;
     --text-color: #E1E1E1;
-    --primary-color: #00bcd4;
-    --secondary-color: #ff4081;
+    --primary-color: #81FE88;
+    --secondary-color: #b9b9b9;
     --tag-color: #171d1f;
     --font-family: "Prompt", sans-serif;
     --itens-background-color: #171d1f;
@@ -37,6 +37,7 @@ aside {
 .lista-links {
     display: flex;
     flex-direction: column;
+    gap: 2.5em;
     margin-top: 5em;
     align-items: center;
     list-style-type: none;
@@ -66,4 +67,120 @@ aside {
     border: 2px solid var(--primary-color);
     padding: 0.75em 1.88em;
     border-radius: 0.5em;
+}
+
+main {
+    background-color: var(--itens-background-color);
+    border-radius: 0.63em;
+    padding: 2em;
+    display: flex;
+    gap: 1.5em;
+}
+
+h2 {
+   font-size: 1.63em;
+   margin-bottom: 2.5em;
+   font-weight: 600;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+form div label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.13em;
+    font-weight: 400;
+}
+form div input, textarea {
+    width: 100%;
+    padding: 0.5em 1em;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0.25em;
+    font-family: var(--font-family);
+    line-height: 1.4em;
+}
+form div input {
+    height: 2.5em;
+}
+textarea {
+    height: 10em;
+}
+
+.lista-tags li {
+    display: flex;
+    background-color: var(--secondary-color);
+    color: var(--tag-color);
+    gap: 0.63em;
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+}
+.lista-tags {
+    display: flex;
+}
+.container-botoes {
+    display: flex;
+    gap: 1.5em;
+    justify-content: space-between;
+}
+.container-botoes button {
+   width: 50%;
+   padding: 0.75em 2em 0.75em 0.75em;
+   text-align: center;
+   border-radius: 0.5em;
+   font-family: var(--font-family);
+   font-size: 1.13em;
+    font-weight: 500; 
+}
+.botao-descartar {
+    background-color: var(--itens-background-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    position: relative;
+}
+.botao-descartar::after {
+    content: "";
+    background-image: url("./img/trash.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0.5em;
+}
+
+.botao-publicar {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--itens-background-color);
+    position: relative;
+}
+.botao-publicar::after {
+    content: "";
+    background-image: url("./img/arrow_forward.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0.5em;
+}
+.botao-publicar:hover, .botao-descartar:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.container-descricao {
+    width: 26.38em;
+}
+.main-imagem {
+    border-radius: 0.5em;
+    height: 100%;
+    object-fit: cover;
 }
