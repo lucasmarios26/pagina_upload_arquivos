@@ -184,3 +184,50 @@ textarea {
     height: 100%;
     object-fit: cover;
 }
+.container-imagem {
+    height: 23em;
+    padding: 1.5em 1em;
+    background-color: var(--secondary-color);
+    border-radius: 0.5em;
+}
+.container-upload-imagem button {
+    margin: 1em, 0, 0.5em, 0;
+    background-color: var(--itens-background-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.5em;
+    color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
+    padding: 0.75em;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1.13em;
+    position: relative;    
+}
+
+.container-upload-imagem button::after {
+    content: "";
+    background-image: url("./img/upload.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0.5em;
+}
+.container-upload-imagem button:hover {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--itens-background-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.container-imagem-nome {
+    display: flex;
+    gap: 0.5em;
+    color: var(--secondary-color);
+    font-size: 1em;
+}
